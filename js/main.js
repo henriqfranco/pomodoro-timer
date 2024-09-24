@@ -53,7 +53,7 @@ startButton.addEventListener('click', function () {
             if (time < 0) {
                 clearInterval(interval);
                 timerDisplay.textContent = '00:00';
-                startButton.textContent = 'Start';
+                startButton.textContent = 'start';
                 isRunning = false;
             }
         }, 1000);
