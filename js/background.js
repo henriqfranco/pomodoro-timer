@@ -2,6 +2,8 @@ const bgSelector = document.getElementById('bgs');
 const body = document.querySelector('body');
 const main = document.querySelector('main');
 
+body.style.backgroundImage = 'url(./imgs/f5f27448c036af645c27467c789ad759.gif)';
+
 function applyBackground(selectedBg) {
     if (selectedBg === 'your-name') {
         body.style.backgroundImage = 'url(./imgs/f5f27448c036af645c27467c789ad759.gif)';
