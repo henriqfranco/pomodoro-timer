@@ -57,11 +57,11 @@ startButton.addEventListener('click', function () {
                 isRunning = false;
             }
         }, 1000);
-        startButton.textContent = 'Pause';
+        startButton.textContent = 'pause';
         isRunning = true;
     } else {
         clearInterval(interval);
-        startButton.textContent = 'Resume';
+        startButton.textContent = 'resume';
         isRunning = false;
     }
 });
@@ -69,7 +69,7 @@ startButton.addEventListener('click', function () {
 resetButton.addEventListener('click', function () {
     clearInterval(interval);
     isRunning = false;
-    startButton.textContent = 'Start';
+    startButton.textContent = 'start';
     if (currentMode === 'pomodoro') {
         time = 25 * 60;
         timerDisplay.textContent = '25:00';
