@@ -12,7 +12,7 @@ function applyBackground(selectedBg) {
         main.style.background = 'rgba(245, 197, 63, 0.37)';
         main.style.border = '1px solid rgba(245, 197, 63, 1)';
     } else if (selectedBg === 'tongue'){
-        body.style.backgroundImage = 'url(/imgs/NxjWrSr.gif)';
+        body.style.backgroundImage = 'url(./imgs/NxjWrSr.gif)';
         main.style.background = 'rgba(243, 245, 63, 0.37)';
         main.style.border = '1px solid rgba(243, 245, 63, 1)';
     } else if (selectedBg === 'surprise'){
