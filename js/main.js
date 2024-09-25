@@ -17,7 +17,7 @@ pomodoroButton.addEventListener('click', function () {
     currentMode = 'pomodoro';
     timerDisplay.textContent = '25:00';
     clearInterval(interval);
-    startButton.textContent = 'Start';
+    startButton.textContent = 'start';
     isRunning = false;
     this.classList.add('selected');
     shortBreakButton.classList.remove('selected');
@@ -29,7 +29,7 @@ shortBreakButton.addEventListener('click', function () {
     currentMode = 'short';
     timerDisplay.textContent = '5:00';
     clearInterval(interval);
-    startButton.textContent = 'Start';
+    startButton.textContent = 'start';
     isRunning = false;
     this.classList.add('selected');
     pomodoroButton.classList.remove('selected');
