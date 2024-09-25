@@ -19,6 +19,9 @@ pomodoroButton.addEventListener('click', function () {
     clearInterval(interval);
     startButton.textContent = 'Start';
     isRunning = false;
+    this.classList.add('selected');
+    shortBreakButton.classList.remove('selected');
+    longBreakButton.classList.remove('selected');
 });
 
 shortBreakButton.addEventListener('click', function () {
@@ -28,6 +31,9 @@ shortBreakButton.addEventListener('click', function () {
     clearInterval(interval);
     startButton.textContent = 'Start';
     isRunning = false;
+    this.classList.add('selected');
+    pomodoroButton.classList.remove('selected');
+    longBreakButton.classList.remove('selected');
 });
 
 longBreakButton.addEventListener('click', function () {
@@ -35,8 +41,11 @@ longBreakButton.addEventListener('click', function () {
     currentMode = 'long';
     timerDisplay.textContent = '15:00';
     clearInterval(interval);
-    startButton.textContent = 'Start';
+    startButton.textContent = 'start';
     isRunning = false;
+    this.classList.add('selected');
+    pomodoroButton.classList.remove('selected');
+    shortBreakButton.classList.remove('selected');
 });
 
 startButton.addEventListener('click', function () {

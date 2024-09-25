@@ -35,9 +35,27 @@ main .buttons {
     gap: 1rem;
 }
 
-main h1 {
-    font-size: 3rem;
+.btn-light {
+    background-color: transparent;
     color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+.btn-light:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+main h1 {
+    font-size: 10rem;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.77);
 }
 
 main .options {
@@ -48,7 +66,7 @@ main .options {
 
 main .options i {
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .modal-body {
@@ -61,17 +79,46 @@ main .options i {
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     main {
         padding: 1rem;
     }
 
     main h1 {
-        font-size: 2rem;
+        font-size: 5rem;
     }
 
     main .options i {
         font-size: 1.2rem;
     }
-    
+
+    .btn-light {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .btn-light {
+        border-radius: 1rem;
+    }
+}
+
+.selected {
+    background-color: white;
+    color: black;
+}
+
+#reset:hover {
+    transform: scale(1.1);
+}
+
+.modal-content{
+    background-color: black;
+    color: white;
+}
+
+iframe{
+    position: absolute;
+    left: 10px;
+    bottom: 0;
 }

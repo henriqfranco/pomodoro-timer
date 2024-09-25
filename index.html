@@ -17,9 +17,13 @@
 
 <body>
 
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/playlist/6sGPclX1FuHmWjn6yJemng?utm_source=generator&theme=0"  frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
     <main>
         <div class="buttons">
-            <button type="button" class="btn btn-light" id="pomodoro">pomodoro</button>
+            <button type="button" class="btn btn-light selected" id="pomodoro">pomodoro</button>
             <button type="button" class="btn btn-light" id="short">short break</button>
             <button type="button" class="btn btn-light" id="long">long break</button>
         </div>
@@ -35,20 +39,20 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Settings</h5>
+                    <h5 class="modal-title">settings</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <label for="bgs">Change Background:</label>
+                    <label for="bgs">change background:</label>
                     <select name="backgrounds" id="bgs">
-                        <option value="your-name">Your Name</option>
-                        <option value="anime-girl">Anime Girl</option>
-                        <option value="tongue">Tongue Out</option>
-                        <option value="surprise">Surprised</option>
+                        <option value="your-name">your name</option>
+                        <option value="anime-girl">anime girl</option>
+                        <option value="tongue">tongue out</option>
+                        <option value="surprise">surprised</option>
                     </select>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">close</button>
                 </div>
             </div>
         </div>
