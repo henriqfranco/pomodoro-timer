@@ -4,6 +4,7 @@ const longBreakButton = document.getElementById('long');
 const timerDisplay = document.getElementById('timer');
 const startButton = document.getElementById('start');
 const resetButton = document.getElementById('reset');
+const arrow = document.getElementById('reset');
 
 let time = 25 * 60;
 let interval;
@@ -76,6 +77,13 @@ startButton.addEventListener('click', function () {
 });
 
 resetButton.addEventListener('click', function () {
+    arrow.addEventListener('click', () => {
+        arrow.classList.add('spin');
+    });
+    setTimeout(() => {
+        arrow.classList.remove('spin');
+    }, 1000);
+    
     clearInterval(interval);
     isRunning = false;
     startButton.textContent = 'start';
